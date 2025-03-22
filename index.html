@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>I dont know what is this but ok</title>
+</head>
+<body>
+ <h1>I dont know what is this but ok</h1>
+ <p>I just want to make sure I have finished make this.</p>
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdggk5ZVrWztLVLgUMKBddS3Q5jdr69BtovQ&s" alt="Online Image" width="200">
+<br>
+<br>
+    <style>
+        .hover-box {
+            display: inline-block; /* Ensures only the box is hovered */
+            padding: 20px; /* Space inside the box */
+            border: 2px solid black; /* Box border */
+            text-align: center; /* Center text */
+            font-size: 20px; /* Text size */
+            cursor: pointer; /* Changes cursor on hover */
+            background-color: lightgray; /* Box background */
+            transition: background-color 0.3s; /* Smooth transition */
+            text-decoration: none; /* Removes underline */
+            color: black; /* Text color */
+        }
+
+        .hover-box:hover {
+            background-color: gray; /* Changes background when hovered */
+        }
+    </style>
+</head>
+<body>
+    <a id="box" class="hover-box" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Click me!</a>
+
+    <script>
+        let boxElement = document.getElementById("box");
+
+        boxElement.addEventListener("mouseenter", function() {
+            boxElement.textContent = "actually, never mind!";
+        });
+
+        boxElement.addEventListener("mouseleave", function() {
+            boxElement.textContent = "Click me!";
+        });
+    </script>
+</body>
+</html>
